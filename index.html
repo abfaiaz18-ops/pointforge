@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PointForge</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: Inter, Arial, sans-serif;
+      background: #080a0d;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .page {
+      width: min(1000px, 100%);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 9vw, 100px);
+      letter-spacing: -0.05em;
+    }
+
+    .tagline {
+      margin: 18px auto 42px;
+      max-width: 720px;
+      color: #9ca6b3;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      display: block;
+      padding: 48px 28px;
+      border: 1px solid #252a32;
+      border-radius: 20px;
+      background: #101318;
+      color: white;
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #4bd8ff;
+      background: #14191f;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #8e98a5;
+      line-height: 1.5;
+    }
+
+    .launch {
+      display: inline-block;
+      margin-top: 24px;
+      color: #55dcff;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 42px;
+      color: #626c78;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #9ca6b3;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <h1>PointForge</h1>
+
+    <p class="tagline">
+      An experimental open-source browser-based 3D project exploring
+      procedural characters, animation, locomotion, flight, physics,
+      effects, and interactive systems using Three.js.
+    </p>
+
+    <section class="cards">
+      <a class="card" href="robot.html">
+        <h2>VANTA-9</h2>
+
+        <p>
+          Procedural humanoid cyborg with locomotion, flight,
+          acrobatics, weapons, animation systems, and interactive controls.
+        </p>
+
+        <span class="launch">Launch VANTA-9 →</span>
+      </a>
+
+      <a class="card" href="dragon.html">
+        <h2>Cyborg Dragon</h2>
+
+        <p>
+          Procedural mechanical dragon with quadrupedal locomotion,
+          articulated wings, flight, propulsion, plasma effects, and more.
+        </p>
+
+        <span class="launch">Launch Dragon →</span>
+      </a>
+    </section>
+
+    <footer>
+      Open source under the MIT License ·
+      <a href="https://github.com/abfaiaz18-ops/pointforge">
+        View source on GitHub
+      </a>
+    </footer>
+  </main>
+</body>
+</html>
